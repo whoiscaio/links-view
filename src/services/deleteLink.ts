@@ -1,6 +1,6 @@
 import axios from 'axios'
-import aws_url from './aws'
+import api_url from './api'
 
 export default async function deleteLink(linkId: string) {
-  await axios.delete(`${aws_url}/links/${linkId}/`)
+  await axios.delete(`${api_url}/links/${linkId}/`)
 }

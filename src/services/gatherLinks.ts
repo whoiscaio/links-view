@@ -1,8 +1,8 @@
 import axios from 'axios'
-import aws_url from './aws'
+import api_url from './api'
 
 export default async function gatherLinks() {
-  const response = await axios.get(`${aws_url}/links/`)
+  const response = await axios.get(`${api_url}/links/`)
 
   return response.data
 }
