@@ -1,46 +1,62 @@
-# Getting Started with Create React App
+# Desafio Técnico - Devnology
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Olá!
 
-## Available Scripts
+Antes de tudo, gostaria de agradecer pela oportunidade de participar desse desafio! Foi um desafio de muito aprendizado, e espero conseguir sintetizar bem as etapas do processo e os aprendizados que acumulei durante elas.
 
-In the project directory, you can run:
+## Tecnologias
 
-### `yarn start`
+Front-end: React.js, Typescript e Styled-Components.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Back-end: Node.js, Typescript e Express.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Banco de Dados: Não relacional (MongoDB).
 
-### `yarn test`
+## Etapas do Desenvolvimento
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Back-end
 
-### `yarn build`
+O backend da aplicação foi a primeira parte a ser desenvolvida, para ela foi utilizado Typescript e Node.js com o framework Express.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Na API existe um total de cinco rotas, uma rota no endereço '/', que serve apenas para avaliar a disponibilidade do serviço, e as demais rotas do CRUD na '/links'.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Algumas das dependências utilizadas nesse backend foram: axios, mongoose, eslint (para padronização de código) e cheerio.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+O cheerio foi utilizado para a importação de artigos em forma de links da [devGo](https://devgo.com.br/).
 
-### `yarn eject`
+### Front-end
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Após a construção da API, foi construído o front-end, para ele foi criada uma interface bem simples, que visava uma abordagem bem direta e de fácil entendimento para as demais funcionalidades.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+O frontend foi contruído com Typescript e React.js.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Banco de Dados
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Para o banco de dados, por se tratar de uma organização extremamente simples, para armazenamento exclusivo de links, onde existia apenas uma associação entre título e link, foi utilizado um banco de dados não-relacional, no caso o MongoDB.
 
-## Learn More
+### Deploy
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+A princípio o backend e o MongoDB foram colocados no serviço da AWS EC2, no entanto não foi possível continuar com essa implementação, pois como o frontend foi hospedado na Vercel, e a máquina da AWS EC2 apenas disponibiza domínios http (a vercel utiliza https), o backend precisou ser transferido para um outro local.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Dessa forma, o backend foi publicado na [Cyclic](https://www.cyclic.sh/), para o banco de dados foi utilizado um Cluster remoto no MongoDB Atlas, e o frontend foi hospedado na [Vercel](https://vercel.com/).
+
+## Links
+
+A aplicação pode ser acessada [aqui](https://link-manager-whoiscaio.vercel.app/links).
+
+[Repositório Frontend](https://github.com/whoiscaio/links-view) (é onde você está agora).
+
+[Repositório Backend](https://github.com/whoiscaio/links-api).
+
+## Conclusão
+
+Esse é o meu projeto! Espero que tenham gostado, ainda mediante a alguns imprevistos que ocorreram, tentei dar o meu máximo e produzir um projeto para agradar a vocês.
+
+Foi um projeto de muito aprendizado, pude rever inúmeros conceitos no Front-end e no Back-end, tal como aprofundar os meus conhecimentos na AWS (embora, no final, a mesma não tenha sido utilizada).
+
+## Contato
+
+Telefone: (48) 9 9162-1641
+
+E-mail: caiodev.contato@gmail.com | whoiscaio@protonmail.com
+
