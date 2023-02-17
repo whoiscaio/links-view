@@ -4,6 +4,14 @@ Olá!
 
 Antes de tudo, gostaria de agradecer pela oportunidade de participar desse desafio! Foi um desafio de muito aprendizado, e espero conseguir sintetizar bem as etapas do processo e os aprendizados que acumulei durante elas.
 
+## Links
+
+A aplicação pode ser acessada [aqui](https://link-manager-whoiscaio.vercel.app/links).
+
+[Repositório Frontend](https://github.com/whoiscaio/links-view) (é onde você está agora).
+
+[Repositório Backend](https://github.com/whoiscaio/links-api).
+
 ## Tecnologias
 
 Front-end: React.js, Typescript e Styled-Components.
@@ -39,14 +47,6 @@ Para o banco de dados, por se tratar de uma organização extremamente simples, 
 A princípio o backend e o MongoDB foram colocados no serviço da AWS EC2, no entanto não foi possível continuar com essa implementação, pois como o frontend foi hospedado na Vercel, e a máquina da AWS EC2 apenas disponibiza domínios http (a vercel utiliza https), o backend precisou ser transferido para um outro local.
 
 Dessa forma, o backend foi publicado na [Cyclic](https://www.cyclic.sh/), para o banco de dados foi utilizado um Cluster remoto no MongoDB Atlas, e o frontend foi hospedado na [Vercel](https://vercel.com/).
-
-## Links
-
-A aplicação pode ser acessada [aqui](https://link-manager-whoiscaio.vercel.app/links).
-
-[Repositório Frontend](https://github.com/whoiscaio/links-view) (é onde você está agora).
-
-[Repositório Backend](https://github.com/whoiscaio/links-api).
 
 ## Conclusão
 
